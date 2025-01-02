@@ -27,15 +27,15 @@ body {
     padding: 0rem 0rem 1rem 0rem;
 }
 
-.frontBG{
+.frontBG {
     background-color: var(--frontEnd);
 }
 
-.backBG{
+.backBG {
     background-color: var(--backEnd);
 }
 
-.inovBG{
+.inovBG {
     background-color: var(--innovGest);
 }
 
@@ -43,7 +43,7 @@ body {
 
 nav {
     background-color: var(--grisOscuro);
-    padding: 2rem;
+    padding: 1rem 2rem 1rem 2rem;
     display: flex;
     justify-content: center;
     -webkit-box-shadow: 0px 4px 2px var(--azul);
@@ -95,9 +95,11 @@ nav {
     justify-content: center;
     align-items: center;
     background-image: url();
-    background: 
-        linear-gradient(rgb(34, 113, 209, 0.25), rgb(34, 113, 209, 0.25)), /* Degradado */
-        url("../images/PlayerBG.png"); /* Imagen de fondo */
+    background:
+        linear-gradient(rgb(34, 113, 209, 0.25), rgb(34, 113, 209, 0.25)),
+        /* Degradado */
+        url("../images/PlayerBG.png");
+    /* Imagen de fondo */
     background-position: center;
     background-size: cover;
     height: auto;
@@ -221,6 +223,80 @@ nav {
     justify-content: space-evenly;
     align-items: center;
     color: var(--blanco);
+}
+
+/* --------------- NUEVO VIDEO ---------------*/
+
+.nuevo-contenedor {
+    padding: 2rem 5rem 2rem 5rem;
+}
+
+.nuevo-titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding: 2rem;
+    color: var(--blanco);
+}
+
+.nuevo-titulo-texto {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.nuevo-formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.nuevo-formulario-titulo {
+    color: var(--blanco);
+    padding: 1rem;
+    margin: 0.5rem;
+    border-top: 0.0125rem solid var(--grisClaro);
+    border-bottom: 0.0125rem solid var(--grisClaro);
+    font-weight: bold;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.nuevo-formulario-campos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.nuevo-formulario-campos-seccion {
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.nuevo-formulario-campos-seccion-input {
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    width: 50%;
+}
+
+label {
+    color: var(--blanco);
+}
+
+input,
+select, textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid var(--grisClaro);
+    background-color: var(--grisOscuro);
+    color: var(--grisClaro);
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: none;
 }
 
 /* --------------- FOOTER ---------------*/
