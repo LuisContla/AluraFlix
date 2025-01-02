@@ -7,20 +7,36 @@
     --grisOscuro: #262626;
     --grisClaro: #A5A5A5;
     --blanco: #FFFFFF;
-    --azul: #2271D1;
+    --azul: #2271d1;
     --error: #E53935;
     --frontEnd: #6BD1FF;
     --backEnd: #00C86F;
     --innovGest: #FFBA05;
 }
 
-*{
+* {
     font-family: "Roboto", serif;
 }
 
 body {
     margin: 0%;
     background-color: var(--grisOscuro);
+}
+
+.main-contenedor {
+    padding: 0rem 0rem 1rem 0rem;
+}
+
+.frontBG{
+    background-color: var(--frontEnd);
+}
+
+.backBG{
+    background-color: var(--backEnd);
+}
+
+.inovBG{
+    background-color: var(--innovGest);
 }
 
 /* --------------- NAVEGACION ---------------*/
@@ -33,15 +49,26 @@ nav {
     -webkit-box-shadow: 0px 4px 2px var(--azul);
     -moz-box-shadow: 0px 4px 2px var(--azul);
     box-shadow: 0px 4px 2px var(--azul);
-}.nav-logo{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-logo {
+    display: flex;
     width: 25%;
-}.nav-botones{
+}
+
+.nav-botones {
     width: 75%;
     display: flex;
     justify-content: end;
     align-items: center;
 
-}.nav-botones-home, .nav-botones-nuevo{
+}
+
+.nav-botones-home,
+.nav-botones-nuevo {
     color: var(--blanco);
     width: 7.5rem;
     text-align: center;
@@ -51,11 +78,149 @@ nav {
     padding: 0.75rem 1rem 0.75rem 1rem;
     border: 0.125rem solid var(--blanco);
     border-radius: 0.5rem;
-}.nav-botones-home:hover, .nav-botones-nuevo:hover{
+}
+
+.nav-botones-home:hover,
+.nav-botones-nuevo:hover {
     background-color: var(--negro);
     color: var(--azul);
     border: 0.125rem solid var(--azul);
-    box-shadow: inset 0px 0px 0.75rem var(--azul); 
+    box-shadow: inset 0px 0px 0.75rem var(--azul);
+}
+
+/* --------------- TITLE CARD ---------------*/
+
+.titlecard-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url();
+    background: 
+        linear-gradient(rgb(34, 113, 209, 0.25), rgb(34, 113, 209, 0.25)), /* Degradado */
+        url("../images/PlayerBG.png"); /* Imagen de fondo */
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    padding: 10rem 5rem 10rem 5rem;
+}
+
+.titlecard-contenedor-texto {
+    width: 60%;
+}
+
+.titlecard-contenedor-texto-titulo {
+    background-color: var(--frontEnd);
+    color: var(--blanco);
+    padding: 0.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    width: 12.5rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.titlecard-contenedor-texto-subtitulo {
+    color: var(--blanco);
+    font-size: 1.5rem;
+    width: 80%;
+}
+
+.titlecard-contenedor-texto-contenido {
+    color: var(--blanco);
+    font-size: 1rem;
+    width: 80%;
+}
+
+.titlecard-contenedor-imagen {
+    width: 40%;
+}
+
+.titlecard-contenedor-imagen-imagen {
+    width: 100%;
+}
+
+/* --------------- CONTENT SECTION ---------------*/
+
+.contentsection-contenedor {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.contentsection-titulo {
+    color: var(--blanco);
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 20rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.contentsection-contenido {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+/* --------------- ELEMENT CARD ---------------*/
+
+.elementcard-contenedor-front {
+    width: 33%;
+    margin: 1rem;
+    border: 0.25rem solid var(--frontEnd);
+    border-radius: 1rem;
+}
+
+.elementcard-imagen-imagen-front {
+    width: 100%;
+    border-radius: 0.75rem 0.75rem 0rem 0rem;
+    border-bottom: 0.25rem solid var(--frontEnd);
+}
+
+.elementcard-contenedor-back {
+    width: 33%;
+    margin: 1rem;
+    border: 0.25rem solid var(--backEnd);
+    border-radius: 1rem;
+}
+
+.elementcard-imagen-imagen-back {
+    width: 100%;
+    border-radius: 0.75rem 0.75rem 0rem 0rem;
+    border-bottom: 0.25rem solid var(--backEnd);
+}
+
+.elementcard-contenedor-inov {
+    width: 33%;
+    margin: 1rem;
+    border: 0.25rem solid var(--innovGest);
+    border-radius: 1rem;
+}
+
+.elementcard-imagen-imagen-inov {
+    width: 100%;
+    border-radius: 0.75rem 0.75rem 0rem 0rem;
+    border-bottom: 0.25rem solid var(--innovGest);
+}
+
+.elementcard-botones {
+    background-color: var(--negro);
+    border-radius: 0rem 0rem 0.75rem 0.75rem;
+    display: flex;
+    justify-content: center;
+    padding: 0.75rem;
+}
+
+.elementcard-botones-borrar,
+.elementcard-botones-editar {
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: var(--blanco);
 }
 
 /* --------------- FOOTER ---------------*/

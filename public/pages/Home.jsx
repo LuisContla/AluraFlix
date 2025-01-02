@@ -1,8 +1,16 @@
+import TitleCard from "../components/TitleCard";
+import ContentSection from "../components/ContentSection";
+
 function Home() {
 
     return (
         <>
-            <h1>Home</h1>
+            <div className="main-contenedor">
+                <TitleCard />
+                <ContentSection categoria="FRONT END" />
+                <ContentSection categoria="BACK END" />
+                <ContentSection categoria="INOVACIÓN Y GESTIÓN" />
+            </div>
         </>
     )
 
