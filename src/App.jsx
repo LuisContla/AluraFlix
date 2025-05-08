@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <Nav />
-      <NewVideo />
+      <Home />
       <Footer />
     </>
   )

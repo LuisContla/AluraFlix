@@ -8,6 +8,7 @@
     --grisClaro: #A5A5A5;
     --blanco: #FFFFFF;
     --azul: #2271d1;
+    --azulClaro: #65a5f3;
     --error: #E53935;
     --frontEnd: #6BD1FF;
     --backEnd: #00C86F;
@@ -97,9 +98,7 @@ nav {
     background-image: url();
     background:
         linear-gradient(rgb(34, 113, 209, 0.25), rgb(34, 113, 209, 0.25)),
-        /* Degradado */
         url("../images/PlayerBG.png");
-    /* Imagen de fondo */
     background-position: center;
     background-size: cover;
     height: auto;
@@ -163,14 +162,33 @@ nav {
 
 .contentsection-contenido {
     display: flex;
-    justify-content: center;
     align-content: center;
+    overflow-x: auto;
+}
+
+.contentsection-contenido::-webkit-scrollbar {
+    height: 0.5rem;
+}
+
+.contentsection-contenido::-webkit-scrollbar-thumb {
+    background: var(--azul);
+    border-radius: 0.25rem;
+}
+
+.contentsection-contenido::-webkit-scrollbar-thumb:hover {
+    background: var(--azulClaro);
+}
+
+.slider {
+    display: flex;
+    gap: 0.5rem;
 }
 
 /* --------------- ELEMENT CARD ---------------*/
 
 .elementcard-contenedor-front {
-    width: 33%;
+    flex: 0 0 auto;
+    width: 25rem;
     margin: 1rem;
     border: 0.25rem solid var(--frontEnd);
     border-radius: 1rem;
@@ -183,7 +201,8 @@ nav {
 }
 
 .elementcard-contenedor-back {
-    width: 33%;
+    flex: 0 0 auto;
+    width: 25rem;
     margin: 1rem;
     border: 0.25rem solid var(--backEnd);
     border-radius: 1rem;
@@ -196,7 +215,8 @@ nav {
 }
 
 .elementcard-contenedor-inov {
-    width: 33%;
+    flex: 0 0 auto;
+    width: 25rem;
     margin: 1rem;
     border: 0.25rem solid var(--innovGest);
     border-radius: 1rem;
@@ -286,7 +306,8 @@ label {
 }
 
 input,
-select, textarea {
+select,
+textarea {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -299,6 +320,25 @@ select, textarea {
     resize: none;
 }
 
+.nuevo-formulario-campos-botones {
+    display: flex;
+}
+
+.nuevo-formulario-campos-botones-boton {
+    color: var(--blanco);
+    border: 0.15rem solid var(--blanco);
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    margin: 0.5rem;
+    width: 7.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.nuevo-formulario-campos-botones-boton:hover {
+    border: 0.15rem solid var(--azul);
+}
+
 /* --------------- FOOTER ---------------*/
 
 footer {
@@ -309,4 +349,62 @@ footer {
     -webkit-box-shadow: 0px -4px 2px var(--azul);
     -moz-box-shadow: 0px -4px 2px var(--azul);
     box-shadow: 0px -4px 2px var(--azul);
+}
+
+/*  ---------------  RESPONSIVIDAD  ---------------*/
+
+@media (max-width: 821px) {
+
+    .contentsection-titulo{
+        align-self: center;
+    }
+
+    .elementcard-contenedor-front{
+        width: 19rem;
+    }.elementcard-contenedor-back{
+        width: 19rem;
+    }.elementcard-contenedor-inov{
+        width: 19rem;
+    }
+
+}
+
+@media (max-width: 421px) {
+
+    nav, .titlecard-contenedor{
+        display: none;
+    }
+
+    .contentsection-titulo{
+        align-self: left;
+    }
+
+    .elementcard-contenedor-front{
+        width: 17rem;
+    }.elementcard-contenedor-back{
+        width: 17rem;
+    }.elementcard-contenedor-inov{
+        width: 17rem;
+    }
+
+    /* --------------- NUEVO VIDEO ---------------*/
+
+    .nuevo-titulo {
+        padding: 0rem;
+        text-align: center;
+    }
+
+    .nuevo-formulario-campos-seccion {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nuevo-formulario-campos-seccion-input {
+        width: 100%;
+    }
+
+    .nuevo-formulario-campos-botones {
+        flex-direction: column;
+        align-items: center;
+    }
 }

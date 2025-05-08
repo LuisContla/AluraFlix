@@ -42,7 +42,8 @@ function NewVideo() {
                             </div>
                         </div>
                         <div className="nuevo-formulario-campos-botones">
-
+                            <div className="nuevo-formulario-campos-botones-boton">GUARDAR</div>
+                            <div className="nuevo-formulario-campos-botones-boton">LIMPIAR</div>
                         </div>
                     </div>
                 </div>

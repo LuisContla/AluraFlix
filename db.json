@@ -1,0 +1,76 @@
+{
+    "proyectos": [
+        {
+            "id": 1,
+            "titulo": "¿Cuándo usar Let, Var y Const?",
+            "categoria": "FRONT END",
+            "imagen": "../images/VideoF1.png",
+            "video": "https://example.com/video1.mp4",
+            "descripcion": "¿Cuándo usar Let, Var y Const?"
+        },
+        {
+            "id": 2,
+            "titulo": "¿Qué es JavaScript?",
+            "categoria": "FRONT END",
+            "imagen": "../images/VideoF2.png",
+            "video": "https://example.com/video1.mp4",
+            "descripcion": "¿Qué es JavaScript?"
+        },
+        {
+            "id": 3,
+            "titulo": "Equipo FrontEnd",
+            "categoria": "FRONT END",
+            "imagen": "../images/VideoF3.png",
+            "video": "https://example.com/video1.mp4",
+            "descripcion": "Equipo FrontEnd"
+        },
+        {
+            "id": 4,
+            "titulo": "Spring Framework",
+            "categoria": "BACK END",
+            "imagen": "../images/VideoB1.png",
+            "video": "https://example.com/video1.mp4",
+            "descripcion": "Spring Framework"
+        },
+        {
+            "id": 5,
+            "titulo": "¿Qué es SQL y NOSQL?",
+            "categoria": "BACK END",
+            "imagen": "../images/VideoB2.png",
+            "video": "https://example.com/video1.mp4",
+            "descripcion": "¿Qué es SQL y NOSQL?"
+        },
+        {
+            "id": 6,
+            "titulo": "Simplificando tu código en Java. Conoce los ENUM",
+            "categoria": "BACK END",
+            "imagen": "../images/VideoB3.png",
+            "video": "https://example.com/video1.mp4",
+            "descripcion": "Simplificando tu código en Java. Conoce los ENUM"
+        },
+        {
+            "id": 7,
+            "titulo": "¿Qué son las Soft Skills?",
+            "categoria": "INOVACIÓN Y GESTIÓN",
+            "imagen": "../images/VideoG1.png",
+            "video": "https://example.com/video1.mp4",
+            "descripcion": "¿Qué son las Soft Skills?"
+        },
+        {
+            "id": 8,
+            "titulo": "Las 7 Soft Skill más deseadas",
+            "categoria": "INOVACIÓN Y GESTIÓN",
+            "imagen": "../images/VideoG2.png",
+            "video": "https://example.com/video1.mp4",
+            "descripcion": "Las 7 Soft Skill más deseadas"
+        },
+        {
+            "id": 9,
+            "titulo": "¿Metodologías Agiles?",
+            "categoria": "INOVACIÓN Y GESTIÓN",
+            "imagen": "../images/VideoG3.png",
+            "video": "https://example.com/video1.mp4",
+            "descripcion": "¿Metodologías Agiles?"
+        }
+    ]
+}
